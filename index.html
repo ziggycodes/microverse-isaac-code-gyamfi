@@ -21,6 +21,123 @@
     - The freeCodeCamp Team
 
     -->
+
+    <nav id='navbar'>
+      <header>Python Documentation</header>
+
+      <ul>
+        <li><a class='nav-link' href='#Introduction'>Introduction</a></li>
+         <li><a class='nav-link' href='#Variables'>Variables</a></li>
+        <li><a class='nav-link' href='#Data_types'>Data types</a></li>
+        <li><a class='nav-link' href='#Numbers'>Numbers</a></li>
+        <li><a class='nav-link' href='#Strings'>Strings</a></li>
+        <li><a class='nav-link' href='#Lists'>Lists</a></li>
+        <li><a class='nav-link' href='#Control_Structures'>Control Structures</a></li>
+        <li><a class='nav-link' href='#Functions'>Functions</a></li>
+        <li><a class='nav-link' href='#References'>References</a></li>
+       
+      </ul>
+    </nav>
+    <main id='main-doc'>
+      <section id='Introduction' class='main-section'>
+        <header>Introduction</header>
+        <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+
+<p>The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python web site, https://www.python.org/, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
+
+<p>The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.</p>
+<p>You will encounter Python programming language in areas like:</p>
+<ul>
+  <li>Web app development</li>
+  <li>Game development</li>
+  <li>Data analysis</li>
+  <li>Task automation</li>
+  <li>Data visualization</li>
+</ul>
+      </section>
+
+      <section id='Variables' class='main-section'>
+        <header>Variables</header>
+
+        <p>A Python variable is a symbolic name that is a reference or pointer to an object. Once an object is assigned to a variable, you can refer to the object by that name. But the data itself is still contained within the object.</p>
+
+      </section>
+
+      <section id='Data_types' class='main-section'>
+
+        <header>Data types</header>
+
+        <p>There are quite a few useful data types in python programming. These include numbers(in the form of integers or floats), strings, lists, dictionaries, sets, etc.
+        
+      </section>
+
+       <section id='Numbers' class='main-section'>
+         <header>Numbers</header>
+
+         <p>Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping.</p>
+           
+        <p>The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float. </p>
+
+        <p>In addition to int and float, Python supports other types of numbers, such as Decimal and Fraction. Python also has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).</p>
+        <p> Examples of operations with numbers are:</p>
+        <code>17 / 3  # classic division returns a float
+5.666666666666667</code>
+
+<code>17 // 3  # floor division discards the fractional part
+5</code>
+<code>17 % 3  # the % operator returns the remainder of the division
+2</code>
+<code>5 * 3 + 2  # floored quotient * divisor + remainder
+17</code>
+       </section>
+
+       <section id='Strings' class='main-section'>
+         <header>Strings</header>
+
+         <p>Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape quotes</p>
+
+         <p>If you don’t want characters prefaced by \ to be interpreted as special characters, you can use raw strings by adding an r before the first quote</p>
+<p>print('C:\some\name')  # here \n means newline!</p>
+<p>print(r'C:\some\name')  # note the r before the quote</p>
+
+<p>String literals can span multiple lines. One way is using triple-quotes: """...""" or '''...'''. End of lines are automatically included in the string, but it’s possible to prevent this by adding a \ at the end of the line. </p>
+       </section>
+
+       <section id='Lists' class='main-section'>
+         <header>Lists</header>
+
+         <p>Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type</p>
+
+         <p>Like strings (and all other built-in sequence types), lists can be indexed and sliced. All slice operations return a new list containing the requested elements. This means that the following slice returns a shallow copy of the list</p>
+
+         <p>Lists also support operations like concatenation. Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content. You can also add new items at the end of the list, by using the append() <i>method</i>.</p>
+
+         <p>Here is an example  of string operation:</p>
+         <code># 3 times 'un', followed by 'ium'
+3 * 'un' + 'ium'
+'unununium'</code>
+       </section>
+
+      <section id='Control_Structures' class='main-section'>
+        <header>Control Structures</header>
+        <p>Python uses the usual flow control statements known from other languages, with some twists.</p>
+        <p>It uses the conditional statements; "if", "elif", and "else". Python also utilises loops like "for...in", "do...while", and "while...True".</p>
+      </section>
+
+      <section id='Functions' class='main-section'>
+        <header>Functions</header>
+        <p>Functions are blocks of code that are written so they can be called later on without having to rewrite all that code once again. The reduce the size of programs by a significant amount.</p>
+        <p>The keyword <i>def</i> introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must be indented.
+
+The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or docstring. (More about docstrings can be found in the section Documentation Strings.) There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so make a habit of it.</p>
+        
+      </section>
+
+      <section id='References' class='main-section'>
+        <header>References</header>
+        <ul><li>The documentation in this page is taken from <a href="https://docs.python.org/3/tutorial/index.html">Python Docs</a></li></ul>
+      </section>
+
     <script  src="js/index.js"></script>
   </body>
 </html>
